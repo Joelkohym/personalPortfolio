@@ -92,9 +92,10 @@ export default function Hero() {
 						>
 							{siteConfig.tagline}
 						</motion.p>
-						<div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.35em] text-[--color-accent]" />
-						<div />
 						{/* Bio */}
+						{/* <div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.35em] text-[--color-accent]" />
+						<div />
+
 						<motion.p
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
@@ -102,7 +103,7 @@ export default function Hero() {
 							className="max-w-2xl text-base md:text-lg leading-relaxed text-white/50 mb-14"
 						>
 							{siteConfig.bio}
-						</motion.p>
+						</motion.p> */}
 						<div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.35em] text-[--color-accent]" />
 						<div />
 
@@ -121,13 +122,13 @@ export default function Hero() {
 								}}
 								whileTap={{ scale: 0.96 }}
 							>
-								<span className="relative z-10">View Projects</span>
+								<span className="relative z-10 text-white">View Projects</span>
 
 								<svg
 									className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
 									fill="none"
 									viewBox="0 0 24 24"
-									stroke="currentColor"
+									stroke="White"
 									strokeWidth={2}
 								>
 									<path
@@ -140,7 +141,7 @@ export default function Hero() {
 
 							<motion.a
 								href="#contact"
-								className="inline-flex items-center px-8 py-10 rounded-full border border-white/15 backdrop-blur-sm hover:bg-white/5 transition-all"
+								className="inline-flex items-center px-8 py-10 rounded-full border text-white border-white/15 backdrop-blur-sm hover:bg-white/5 transition-all"
 								whileHover={{ scale: 1.03 }}
 								whileTap={{ scale: 0.96 }}
 							>

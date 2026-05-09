@@ -27,16 +27,14 @@ export default function Contact() {
 				id="contact"
 				className="py-32 px-6 md:px-12 lg:px-24 w-full bg-black text-center flex flex-col items-center"
 			>
-				<div className="w-full max-w-7xl relative z-10 flex flex-col items-center">
+				<div className="w-full relative z-10 flex flex-col items-center">
 					{/* Section Label */}
 					<motion.span
 						initial={{ opacity: 0, y: 10 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						className="text-sm md:text-base tracking-[0.3em] uppercase text-[--color-accent] mb-6 block font-medium"
-					>
-						Contact
-					</motion.span>
+					></motion.span>
 
 					{/* Main Heading */}
 					<h2 className="text-display text-4xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight mb-10 font-serif text-white max-w-4xl">
@@ -45,10 +43,13 @@ export default function Contact() {
 					</h2>
 
 					{/* Bio/CTA Text */}
-					<p className="text-[--color-text-secondary] text-lg md:text-xl leading-relaxed mb-16 max-w-2xl">
+					<p className="text-[--color-text-secondary] text-lg md:text-xl leading-relaxed mb-16 max-w-4xl">
 						I&apos;m always open to new opportunities, collaborations, or just a
-						friendly conversation about tech. Drop me a line and I&apos;ll get
-						back to you as soon as I can.
+						friendly conversation about tech. <br></br>Drop me a message and
+						I&apos;ll get back to you as soon as I can.
+					</p>
+					<p className="italic text-white text-xl md:text-2xl leading-relaxed mb-16">
+						Contact Me
 					</p>
 
 					{/* Email CTA */}

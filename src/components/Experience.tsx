@@ -46,12 +46,12 @@ export default function Experience() {
 									<div className="absolute inset-0 rounded-full bg-[--color-accent] animate-ping opacity-20" />
 								</div>
 
-								<div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
+								<div className="flex flex-col md:flex-row md:items-start md:justify-center gap-2 mb-4">
 									<div>
-										<h3 className="text-display text-xl text-[--color-text-primary]">
+										<h3 className="text-display text-xl text-white font-extrabold">
 											{exp.role}
 										</h3>
-										<p className="text-[--color-accent-dim] text-sm">
+										<p className="text-sm mt-1 font-extrabold text-white/90">
 											{exp.company}
 										</p>
 									</div>
@@ -60,21 +60,24 @@ export default function Experience() {
 									</span>
 								</div>
 
-								<p className="text-[--color-text-secondary] text-sm mb-4 leading-relaxed">
-									{exp.description}
+								<p className="text-[--color-text-secondary] text-left  text-sm mb-4 leading-relaxed">
+									{"Summary: " + exp.description}
 								</p>
-
-								<ul className="space-y-2">
+								<div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.35em] text-[--color-accent]" />
+								<div />
+								<ul className="space-y-2 text-left w-full">
 									{exp.highlights.map((h) => (
 										<li
 											key={h}
 											className="flex items-start gap-3 text-sm text-[--color-text-muted]"
 										>
-											<span className="mt-2 w-1 h-1 rounded-full bg-[--color-accent] shrink-0" />
-											{h}
+											<span className="shrink-0">•</span>
+											<span>{h}</span>
 										</li>
 									))}
 								</ul>
+								<div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.35em] text-[--color-accent]" />
+								<div />
 							</motion.div>
 						))}
 					</div>
