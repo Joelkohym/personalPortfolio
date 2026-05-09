@@ -65,11 +65,10 @@ export default function Projects() {
 								<div className="absolute inset-0 flex items-center justify-center">
 									<span className="text-display text-7xl font-serif text-[--color-text-muted]/10">
 										<Image
-											src={project.image}
+											src={project.image || ""}
 											alt={`${project.title} Screenshot`}
-											layout="fill"
-											objectFit="contain"
-											className="object-contain w-full h-full"
+											fill
+											style={{ objectFit: "contain" }}
 										/>
 									</span>
 								</div>
