@@ -7,7 +7,7 @@ import { experiences } from "@/data/site-config";
 export default function Experience() {
 	return (
 		<Section
-			id="about"
+			id="Experience"
 			className="py-32 px-6 md:px-12 lg:px-24 w-full bg-black text-center flex flex-col items-center"
 		>
 			{/* 1. 'text-center' handles the text alignment.
