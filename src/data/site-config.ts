@@ -38,7 +38,8 @@ export type Project = {
 export const projects: Project[] = [
 	{
 		title: "Golden Matcha",
-		description: "A full-stack e-commerce platform for a premium matcha brand.",
+		description:
+			"A full-stack e-commerce platform for a Bangkok-born premium matcha brand sourcing directly from Japanese tea farms. Features product browsing, cart management, and checkout — built to make quality matcha accessible to everyday drinkers and businesses alike.",
 		tags: ["Next.js", "TypeScript", "Tailwind CSS"],
 		liveUrl: "https://goldenmatcha.vercel.app",
 		repoUrl: "https://github.com/Joelkohym/golden-matcha",
@@ -48,8 +49,8 @@ export const projects: Project[] = [
 	{
 		title: "Lau Boon Heng",
 		description:
-			"A full-stack e-commerce platform for a premium noodles brand.",
-		tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+			"A full-stack e-commerce platform for one of Singapore's leading noodle manufacturers, established in 1962. Features product catalogue, next-day delivery ordering, and a brand story showcasing over 60 years of innovation — from handcrafted rice noodles to fully automated production.",
+		tags: ["React.js", "TypeScript", "Tailwind CSS"],
 		liveUrl: "https://lauboonheng.onrender.com/",
 		repoUrl: "https://github.com/Joelkohym/lau-boon-heng",
 		featured: true,
