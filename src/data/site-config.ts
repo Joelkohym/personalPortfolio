@@ -10,12 +10,12 @@ export const siteConfig = {
 	email: "Joelkohym@gmail.com",
 	location: "Singapore",
 	bio: `Results-driven technology consultant and product owner with 9 years of experience at the intersection of business and technology. Proven track record of translating complex operational requirements into scalable digital solutions — spanning full-stack development, computer vision, digital twins, process automation, and enterprise system integration. Adept at leading cross-functional teams and owning end-to-end product delivery across supply chain, manufacturing, and logistics domains.`,
-	resumeUrl: "/resume.pdf", // place your resume in /public/resume.pdf
+	resumeUrl: "/resume.pdf",
 	socialLinks: {
 		github: "https://github.com/Joelkohym",
 		linkedin: "https://www.linkedin.com/in/joelkohym/",
 	},
-	profilePicture: "/profile_pic.jpg", // place your profile picture in /public/profile_pic.jpg
+	profilePicture: "/profile_pic.jpg",
 };
 
 export const navLinks = [
@@ -32,7 +32,7 @@ export type Project = {
 	liveUrl?: string;
 	repoUrl?: string;
 	featured?: boolean;
-	image?: string; // place images in /public/projects/
+	image?: string;
 };
 
 export const projects: Project[] = [
@@ -55,23 +55,22 @@ export const projects: Project[] = [
 		featured: true,
 		image: "/projects/lauboonheng.png",
 	},
-
 	{
 		title: "VesselNow",
 		description:
 			"A robust platform enabling external users to efficiently search for real-time vessel locations and pilotage information.",
 		tags: [
 			"React.js",
-			"python flask",
-			"mysql",
+			"Python Flask",
+			"MySQL",
 			"AWS RDS",
 			"AWS S3",
-			"AWS Elastic beanstalk",
-			"AWS Codepipeline",
+			"AWS Elastic Beanstalk",
+			"AWS CodePipeline",
 			"AWS EC2",
-			"websocket",
-			"html",
-			"css",
+			"WebSocket",
+			"HTML",
+			"CSS",
 		],
 		liveUrl: "https://vesselnow.sgtradex.net/",
 		featured: true,
@@ -82,13 +81,13 @@ export const projects: Project[] = [
 		description:
 			"An intuitive platform that allows external users to complete dynamic forms.",
 		tags: [
-			"python flask",
-			"html",
-			"css",
-			"mysql",
+			"Python Flask",
+			"HTML",
+			"CSS",
+			"MySQL",
 			"AWS EC2",
-			"AWS Elastic beanstalk",
-			"AWS Codepipeline",
+			"AWS Elastic Beanstalk",
+			"AWS CodePipeline",
 			"AWS RDS",
 		],
 		liveUrl: "https://sgtd-haulier-grant.sgtradex.net/",
@@ -98,7 +97,7 @@ export const projects: Project[] = [
 	{
 		title: "QR Code Converter",
 		description: "A QR Code generator to convert text into scannable QR codes.",
-		tags: ["Python, Flask", "Docker", "ThingWorx", "Rancher", "GitLab"],
+		tags: ["Python", "Flask", "Docker", "ThingWorx", "Rancher", "GitLab"],
 		repoUrl: "https://gitlab.com/joelkohym/qr-code-converter",
 	},
 ];
@@ -113,16 +112,21 @@ export type Experience = {
 
 export const experiences: Experience[] = [
 	{
-		role: "Innovation Consultant",
-		company: "Hyundai Motors Group Innovation Center, Singapore (HMGICS)",
+		role: "Process Innovation Consultant",
+		company: "Hyundai Motor Group Innovation Center Singapore (HMGICS)",
 		period: "Aug 2024 — Present",
 		description:
-			"Leading strategy and end-to-end delivery of innovation and integration initiatives across supply chain, manufacturing, and robotics domains.",
+			"Full-time, on-site in Singapore. Leading strategy and end-to-end delivery of innovation and integration initiatives across supply chain, manufacturing, and robotics domains.",
 		highlights: [
-			"Built an auto-labelling application for computer vision model training, cutting manual annotation effort by ~90%",
-			"Architected a master data model for supply chain operations, standardising product, supplier, and location data",
-			"Designed and implemented microservices with real-time data synchronisation across distributed systems",
-			"Managed cross-functional teams delivering multiple innovation initiatives in parallel, on time and within scope",
+			"Built an auto-annotation application for computer vision model training supporting a pick-and-place robotics use case, cutting manual annotation effort by ~90% and significantly accelerating AI-driven model development",
+			"Led strategy and end-to-end project delivery of a non-intrusive systems monitoring platform capable of detecting issues in legacy systems without source-code modifications",
+			"Architected a master data model for supply chain operations, standardising product, supplier, and location data to improve data quality, system integration, and end-to-end visibility",
+			"Owned the full feature lifecycle, refactoring codebases for maintainability while integrating frontend applications with backend services",
+			"Implemented microservices with real-time data synchronization to ensure consistency across the ecosystem",
+			"Analysed and documented process and data flows across multiple legacy systems, identifying constraints and designing innovative solutions to enhance functionality and integration",
+			"Managed cross-functional teams to deliver multiple innovation and integration projects simultaneously, ensuring on-time delivery, resource optimization, and alignment with strategic goals",
+			"Designed, developed, and deployed a barcode conversion platform using ThingWorx, Python, Rancher, GitLab, and Docker, enabling seamless 1D/2D barcode transformation for legacy systems without vendor or source-code changes",
+			"Mentored team members and fostered a culture of agile delivery, design thinking, and continuous improvement",
 		],
 	},
 	{
@@ -130,46 +134,79 @@ export const experiences: Experience[] = [
 		company: "SGTraDex",
 		period: "Jan 2023 — Aug 2024",
 		description:
-			"Built and deployed full-stack platforms modernising trade and logistics operations for external users and internal teams.",
+			"Full-time. Built and deployed full-stack platforms modernising trade and logistics operations for external users and internal teams.",
 		highlights: [
-			"Built and deployed VesselNow — a real-time vessel tracking platform with live location search, WebSocket notifications, and data export (React.js, Python Flask, MySQL, AWS)",
-			"Developed a Dynamic Form Solution with automated data extraction and a Power BI dashboard for decision-making",
-			"Streamlined the Internal Billing System by integrating DocuSign and Xero, automating workflows and building a PayNow QR code generator",
+			"Developed VesselNow (React.js, Python Flask, MySQL, AWS RDS, AWS S3, AWS Elastic Beanstalk, AWS CodePipeline, AWS EC2, WebSocket, HTML, CSS) — a robust platform enabling external users to efficiently search for real-time vessel locations and pilotage information",
+			"Implemented a notification feature that alerts users when timestamps change, ensuring timely updates",
+			"Designed the system to export data seamlessly for downstream automation and data entry processes",
+			"Spearheaded the development of a Dynamic Form Solution (Python Flask, HTML, CSS, MySQL, AWS EC2, AWS Elastic Beanstalk, AWS CodePipeline, AWS RDS) — an intuitive platform allowing external users to complete dynamic forms",
+			"Leveraged automation to extract data from AWS S3 and AWS RDS, streamlining data retrieval and analysis; developed a Power BI dashboard for comprehensive data visualization",
+			"Streamlined the Internal Billing System (Python Flask, React.js, Power Automate, VBA, Microsoft Teams, AWS Elastic Beanstalk, AWS CodePipeline, DocuSign, Xero) — engineered automation solutions to integrate with DocuSign, significantly reducing manual billing processes",
+			"Created a PayNow QR Code generator integrated with Xero, automatically filling payment details to prevent human error and ensure invoice number appears in the reference section",
+			"Collaborated with external customers to identify pain points in their operational processes and developed tailored automation solutions to optimize their workflows",
 		],
 	},
 	{
-		role: "Assistant Manager, Operations Excellence",
+		role: "Assistant Manager — Analytics and Process Improvement",
 		company: "DB Schenker",
-		period: "Jan 2021 — Jan 2023",
+		period: "Jan 2022 — Jan 2023",
 		description:
-			"Led a team of five analysts, driving automation and process improvement across logistics operations.",
+			"Full-time. Led a team of five analysts/executives driving analytics, automation, and process improvement across logistics operations.",
 		highlights: [
-			"Achieved >150,000 SGD annual cost savings, reducing operational man-hours by >6,000 hours/year",
-			"Removed manual SAP and Excel processes via Python, VBA, Power Apps, Power Automate, and RPA automation",
-			"Designed and led Power BI training for staff; served as in-house Power Apps consultant",
+			"Led a team of five analysts/executives",
+			"Project Manager for the Spatial Digital Twin Project",
+			"Developed Power BI dashboards to analyse and monitor operational processes",
+			"Developed a website with the ability to send SMS via API and generate QR codes using Python",
+			"Developed mobile and web applications using PowerApps",
+			"Designed and conducted Power BI trainings with hands-on exercises",
+			"Maintained >10 implemented automation solutions",
 		],
 	},
 	{
-		role: "Business Intelligence Analyst",
+		role: "Senior Analyst — Operations Excellence",
+		company: "DB Schenker",
+		period: "Jan 2021 — Dec 2021",
+		description:
+			"Full-time. Drove automation and cost savings initiatives across logistics operations.",
+		highlights: [
+			"Achieved >100,000 SGD annual cost savings, reducing operational man-hours by >6,000 hours a year",
+			"Introduced the ability to use Ghostscript in Python and convert .py files to .exe, enabling development of customised in-house applications",
+			"Streamlined and automated retrieval methods to shorten preparation time, using Python, Excel VBA, Power Apps, Power Automate, SharePoint, and RPA",
+			"Removed manual SAP and Excel processes via automation, saving time and reducing fatigue and error rates",
+			"Worked with internal IT and customers on changes and improvements of existing and new parameters",
+			"Assisted in-house workshops as a Power Apps / Power Automate consultant",
+		],
+	},
+	{
+		role: "Global Business Intelligence Analyst",
 		company: "DHL",
 		period: "Jan 2020 — Dec 2020",
 		description:
-			"Delivered operational performance reporting to DHL's top 100 customers and management on a regional and global level.",
+			"Full-time. Provided operational performance reporting to DHL's top 100 customers and management on both regional and global levels.",
 		highlights: [
-			"Analysed operational processes and data to identify root causes for trends and issues at customer, sector, and product level",
-			"Used Crystal Reports, Power BI, SQL, and UiPath to produce reporting and analysis",
+			"Conducted accurate, proven and reliable analysis through the practical application of First Choice / Six Sigma and designated tools",
+			"Analysed operational processes and data to identify root causes for trends and issues at customer, sector/industry, or product level",
+			"Proficiently used Crystal Reports, Power BI, SQL, and UiPath for reporting and analysis across CSI and other business units",
+			"Implemented Weight Break Analysis using Power BI, allowing RCMs to maximise savings for their customers and gain insights on shipments to identify new business opportunities",
 		],
 	},
 	{
-		role: "Product Owner / Pricing Analyst",
+		role: "APAC Pricing Analyst / Product Owner",
 		company: "DHL",
 		period: "Aug 2017 — Dec 2019",
 		description:
-			"Business Champion and co-creator of KIWI+, a global web-based pricing platform supporting 400+ users across 80+ countries.",
+			"Full-time. Business Champion who co-created KIWI+, a global web-based system tool covering the entire workflow for Key Account Pricing (KAP) teams, encompassing 400+ users from 80+ countries.",
 		highlights: [
-			"Developed auto-assignment logic saving approximately 1 FTE per day in manual processing",
-			"Scripted user stories and acceptance criteria; managed full UAT process with EU/AM business and UX/dev teams",
-			"Conducted training for 100+ APAC users and produced role-specific user guides",
+			"Developed the logic and criteria of the Auto-assignment feature, which helped save 1 manpower a day",
+			"Scripted user stories and acceptance criteria for KIWI+; managed the User Acceptance Testing (UAT) process",
+			"Collaborated with EU & AM Business Teams and UX & Web Development Teams to ensure successful take-up of the system",
+			"Created a User Guide for each role to assist users in navigating and understanding the system functions with ease",
+			"Conducted trainings for more than 100 users in APAC on how to use KIWI+ and shared best practices",
+			"Conducted customer pricing analysis for requests from 15 different countries in Asia Pacific, including China, regarding special rates",
+			"Simulated and analysed entire customer business with existing and potential volumes using up-to-date pricing tools and systems",
+			"Supported the regional Tender Review Board (TRB) process for eligible KAPs",
+			"Generated accurate Customer Pricing Reports including pricing comments/recommendations, opportunity snap-shots, and detailed analysis by product, lane, and weight breaks",
+			"Meticulously implemented and updated rates into in-house billing system",
 		],
 	},
 ];
@@ -182,22 +219,21 @@ export const skills = [
 	"Node.js",
 	"PostgreSQL",
 	"Oracle SQL",
-	"Microsoft Power Platform (Power Apps, Power Automate, Power BI)",
-	"Microsoft Visual Basic for Applications (VBA)",
+	"Microsoft Power Platform",
+	"Power BI",
+	"Power Apps",
+	"Power Automate",
+	"VBA",
 	"Microsoft SQL Server",
 	"UiPath RPA",
 	"GitLab",
 	"GitHub",
-	"Gitbash",
 	"Kafka",
 	"Kubernetes",
 	"Azure",
 	"Tailwind CSS",
 	"Docker",
-	"AWS RDS",
-	"AWS EC2",
-	"AWS Elastic Beanstalk",
-	"AWS Codepipeline",
+	"AWS",
 	"WebSockets",
 	"HTML & CSS",
 	"Figma",
