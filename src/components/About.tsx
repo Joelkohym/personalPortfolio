@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Section from "./Section";
-import { skills } from "@/data/site-config";
+import { skills, siteConfig } from "@/data/site-config";
 
 export default function About() {
 	return (
@@ -34,20 +34,9 @@ export default function About() {
 					{/* Bio Paragraphs - Centered and max-width for readability */}
 					<div className="space-y-6 text-[--color-text-secondary] text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
 						<p>
-							Results-driven technology consultant and product owner with 9
-							years of experience at the intersection of business and
-							technology, translating complex operational requirements into
-							scalable digital solutions.
-						</p>
-						<p>
-							My work spans full-stack development, computer vision, digital
-							twins, process automation, and enterprise system integration —
-							with a focus on supply chain, manufacturing, and logistics
-							domains.
-						</p>
-						<p>
-							Outside of work I play badminton competitively, pick up the
-							guitar, and recharge through photography and travel.
+							{siteConfig.bio.split("\n").map((line, i) => (
+								<span key={i}>{line}</span>
+							))}
 						</p>
 					</div>
 
