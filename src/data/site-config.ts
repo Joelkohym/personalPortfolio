@@ -98,7 +98,6 @@ export const projects: Project[] = [
 		title: "QR Code Converter",
 		description: "A QR Code generator to convert text into scannable QR codes.",
 		tags: ["Python", "Flask", "Docker", "ThingWorx", "Rancher", "GitLab"],
-		repoUrl: "https://gitlab.com/joelkohym/qr-code-converter",
 	},
 	{
 		title: "PayNow QR Code Generator",
