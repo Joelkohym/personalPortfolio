@@ -30,6 +30,13 @@ section[id] {
 
 html {
 	scroll-behavior: smooth;
+
+	/* scrollbar-gutter: stable; */
+}
+
+body::before {
+	/* change z-index: 9999 to: */
+	z-index: -1;
 }
 
 body {

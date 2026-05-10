@@ -78,7 +78,7 @@ export const projects: Project[] = [
 		image: "/projects/vesselnow.png",
 	},
 	{
-		title: "SGTraDex TMS EnterpriseSG Grant Form",
+		title: "Grant Form",
 		description:
 			"An intuitive platform that allows external users to complete dynamic forms.",
 		tags: [
@@ -96,8 +96,46 @@ export const projects: Project[] = [
 		image: "/projects/GrantForm.png",
 	},
 	{
+		title: "Timeslot Booking System with SMS Notifications",
+		description:
+			"A website with timeslot booking capabilities with the ability to send SMS via API, built to support internal logistics operations.",
+		tags: ["Python", "Flask", "API", "HTML", "CSS"],
+	},
+	{
+		title: "Inventory Management Power Apps",
+		description:
+			"Designed and implemented a Power Apps solution for inventory management, leading to improved efficiency by allowing stakeholders to easily track and manage inventory levels using a user-friendly interface on their mobile devices.",
+		tags: ["PowerApps", "Power Automate", "Process Automation"],
+	},
+	{
+		title: "SAP Data Entry Automation",
+		description:
+			"Automated the data entry process for SAP systems and Excel, reducing manual effort and improving accuracy.",
+		tags: ["Python", "SAP", "Automation"],
+	},
+	{
+		title: "Computer Vision Model Training Annotation Tool",
+		description:
+			"Built an auto-annotation application for computer vision model training supporting a pick-and-place robotics use case, cutting manual annotation effort by ~90% and significantly accelerating AI-driven model development.",
+		tags: ["Python", "Flask", "Computer Vision", "AI", "Automation"],
+	},
+	{
+		title: "Non-intrusive Systems Monitoring Platform",
+		description:
+			"Led strategy and end-to-end project delivery of a non-intrusive systems monitoring platform capable of detecting issues in legacy systems without source-code modifications.",
+		tags: ["ThingWorx", "Kepware", "IOT", "Industrial Automation"],
+	},
+	{
+		title: "Master Data Model for Supply Chain Operations",
+		description:
+			"Architected a master data model for supply chain operations, standardising product, supplier, and location data to improve data quality, system integration, and end-to-end visibility.",
+		tags: ["Data Modelling", "Supply Chain", "Data Quality"],
+	},
+
+	{
 		title: "QR Code Converter",
-		description: "A QR Code generator to convert text into scannable QR codes.",
+		description:
+			"A QR Code generator to convert text into scannable QR codes, allowing the ability to enable seamless 1D/2D barcode transformation for legacy systems without vendor or source-code changes.",
 		tags: ["Python", "Flask", "Docker", "ThingWorx", "Rancher", "GitLab"],
 	},
 	{
@@ -114,16 +152,17 @@ export const projects: Project[] = [
 		],
 	},
 	{
-		title: "Customer Operations Automation",
+		title: ".EXE files for In-house Applications",
 		description:
-			"Collaborated with external customers to identify pain points in their operational processes and developed tailored automation solutions to optimize their workflows, leading to improved efficiency and customer satisfaction.",
-		tags: ["Python", "Power Automate", "Process Automation"],
+			"Developed executable files for internal applications, streamlining workflows and improving operational efficiency.",
+		tags: ["Python"],
 	},
 	{
-		title: "SMS & QR Code Website",
+		title:
+			"Power BI Dashboards with email notifications for Operational Analytics",
 		description:
-			"A website with the ability to send SMS via API and generate QR codes, built to support internal logistics operations.",
-		tags: ["Python", "Flask", "API", "QR Code"],
+			"Designed and implemented Power BI dashboards to analyse and monitor operational processes, with automated email notifications to alert stakeholders of key insights and anomalies.",
+		tags: ["Power BI", "Power Automate", "PowerApps", "Data Analytics"],
 	},
 ];
 

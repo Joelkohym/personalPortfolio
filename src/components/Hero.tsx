@@ -44,7 +44,7 @@ export default function Hero() {
 				<div className="w-[75vw] h-[75vw] border border-white/5 rounded-full" />
 			</div>
 
-			<div className="relative z-10 min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-32">
+			<div className="relative z-10 min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-28 md:pt-32 pb-20">
 				<div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-20 items-center">
 					{/* LEFT CONTENT */}
 					<div className="text-left">
