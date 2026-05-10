@@ -6,10 +6,11 @@ export const siteConfig = {
 	name: "Joel Koh Yit Ming",
 	title: "Process Innovation Consultant | Digital Transformation | CSM",
 	tagline:
-		"Helping organisations make better sense and decisions based on data; where facts replace opinions. Transforming organisational processes via digitalisation and automation.",
+		"I analyse process flows, identify gaps, and build digital solutions that turn operational complexity into streamlined, data-driven outcomes.",
+	// "Helping organisations make better sense and decisions based on data; where facts replace opinions. Transforming organisational processes via digitalisation and automation.",
 	email: "Joelkohym@gmail.com",
 	location: "Singapore",
-	bio: `Results-driven technology consultant and product owner with 9 years of experience at the intersection of business and technology. Proven track record of translating complex operational requirements into scalable digital solutions — spanning full-stack development, computer vision, digital twins, process automation, and enterprise system integration. Adept at leading cross-functional teams and owning end-to-end product delivery across supply chain, manufacturing, and logistics domains.`,
+	bio: `Results-driven technology consultant and product owner with 9 years of experience at the intersection of business and technology. I specialise in analysing end-to-end process and data flows, documenting the as-is state, identifying gaps and constraints, and designing to-be solutions that close them. This process-first approach underpins every digital solution I deliver — spanning full-stack development, computer vision, digital twins, process automation, and enterprise system integration. Adept at leading cross-functional teams and owning end-to-end product delivery across supply chain, manufacturing, and logistics domains.`,
 	resumeUrl: "/resume.pdf",
 	socialLinks: {
 		github: "https://github.com/Joelkohym",
