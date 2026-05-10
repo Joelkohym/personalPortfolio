@@ -100,6 +100,31 @@ export const projects: Project[] = [
 		tags: ["Python", "Flask", "Docker", "ThingWorx", "Rancher", "GitLab"],
 		repoUrl: "https://gitlab.com/joelkohym/qr-code-converter",
 	},
+	{
+		title: "PayNow QR Code Generator",
+		description:
+			"A PayNow QR Code generator integrated with Xero that automatically fills payment details to prevent human error and ensures the invoice number appears in the reference section of the PayNow receipt.",
+		tags: [
+			"Python Flask",
+			"React.js",
+			"Xero",
+			"Power Automate",
+			"VBA",
+			"AWS Elastic Beanstalk",
+		],
+	},
+	{
+		title: "Customer Operations Automation",
+		description:
+			"Collaborated with external customers to identify pain points in their operational processes and developed tailored automation solutions to optimize their workflows, leading to improved efficiency and customer satisfaction.",
+		tags: ["Python", "Power Automate", "Process Automation"],
+	},
+	{
+		title: "SMS & QR Code Website",
+		description:
+			"A website with the ability to send SMS via API and generate QR codes, built to support internal logistics operations.",
+		tags: ["Python", "Flask", "API", "QR Code"],
+	},
 ];
 
 export type Experience = {
