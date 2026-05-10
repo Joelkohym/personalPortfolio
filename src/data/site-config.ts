@@ -6,7 +6,7 @@ export const siteConfig = {
 	name: "Joel Koh Yit Ming",
 	title: "Process Innovation Consultant | Digital Transformation | CSM",
 	tagline:
-		"I analyse process flows, identify gaps, and build digital solutions that turn operational complexity into streamlined, data-driven outcomes.",
+		"Helping organisations make better sense and decisions based on data; where facts replace opinions. Transforming organisational processes via digitalisation and automation. <br><br/>I analyse process flows, identify gaps, and build digital solutions that turn operational complexity into streamlined, data-driven outcomes.",
 	// "Helping organisations make better sense and decisions based on data; where facts replace opinions. Transforming organisational processes via digitalisation and automation.",
 	email: "Joelkohym@gmail.com",
 	location: "Singapore",
