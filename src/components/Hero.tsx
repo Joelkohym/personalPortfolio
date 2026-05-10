@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Hero() {
 	return (
-		<section className="relative min-h-screen w-full flex flex-col items-center overflow-hidden bg-[#050505] pb-20 px-6 md:px-12 lg:px-24 z-0 text-center">
+		<section className="relative min-h-screen w-full flex flex-col items-center overflow-hidden bg-[#050505] pb-20 px-4 md:px-12 lg:px-24 z-0 text-center">
 			{/* Background grid */}
 			<div className="absolute inset-0 opacity-[0.04]">
 				<div className="h-full w-full bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)]" />
@@ -44,8 +44,8 @@ export default function Hero() {
 				<div className="w-[75vw] h-[75vw] border border-white/5 rounded-full" />
 			</div>
 
-			<div className="relative z-10 min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-28 md:pt-32 pb-20">
-				<div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-20 items-center">
+			<div className="relative z-10 min-h-screen flex flex-col justify-center max-w-7xl mx-auto pt-28 md:pt-32 pb-20">
+				<div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 lg:gap-20 items-center">
 					{/* LEFT CONTENT */}
 					<div className="text-left">
 						{/* Label */}
@@ -60,8 +60,6 @@ export default function Hero() {
 								Portfolio
 							</span>
 						</motion.div>
-						<div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.35em] text-[--color-accent]" />
-						<div />
 
 						{/* Main heading */}
 						<motion.h1
@@ -80,32 +78,16 @@ export default function Hero() {
 								{siteConfig.title}
 							</span>
 						</motion.h1>
-						<div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.35em] text-[--color-accent]" />
-						<div />
 
 						{/* Tagline */}
 						<motion.p
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.7, delay: 0.3 }}
-							className="max-w-3xl text-lg md:text-2xl leading-relaxed mb-8"
+							className="max-w-3xl text-base md:text-2xl leading-relaxed mb-8"
 						>
 							{siteConfig.tagline}
 						</motion.p>
-						{/* Bio */}
-						{/* <div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.35em] text-[--color-accent]" />
-						<div />
-
-						<motion.p
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.7, delay: 0.5 }}
-							className="max-w-2xl text-base md:text-lg leading-relaxed text-white/50 mb-14"
-						>
-							{siteConfig.bio}
-						</motion.p> */}
-						<div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.35em] text-[--color-accent]" />
-						<div />
 
 						{/* Buttons */}
 						<motion.div
@@ -128,7 +110,7 @@ export default function Hero() {
 									className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
 									fill="none"
 									viewBox="0 0 24 24"
-									stroke="White"
+									stroke="white"
 									strokeWidth={2}
 								>
 									<path
@@ -141,7 +123,7 @@ export default function Hero() {
 
 							<motion.a
 								href="#contact"
-								className="inline-flex items-center px-8 py-10 rounded-full border text-white border-white/15 backdrop-blur-sm hover:bg-white/5 transition-all"
+								className="inline-flex items-center px-8 py-4 rounded-full border text-white border-white/15 backdrop-blur-sm hover:bg-white/5 transition-all"
 								whileHover={{ scale: 1.03 }}
 								whileTap={{ scale: 0.96 }}
 							>
@@ -172,7 +154,7 @@ export default function Hero() {
 
 							<div className="absolute -inset-3 rounded-[2rem] border border-[--color-accent]/30 -rotate-3" />
 
-							<div className="relative w-[280px] h-[360px] md:w-[340px] md:h-[440px] overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-md shadow-2xl">
+							<div className="relative w-[220px] h-[300px] sm:w-[280px] sm:h-[360px] md:w-[340px] md:h-[440px] overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-md shadow-2xl">
 								<Image
 									src={siteConfig.profilePicture}
 									alt="Profile picture"
