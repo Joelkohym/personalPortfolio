@@ -48,35 +48,35 @@ export default function Experience() {
 
 								<div className="flex flex-col md:flex-row md:items-start md:justify-center gap-2 mb-4">
 									<div>
-										<h3 className="text-display text-xl text-white font-extrabold">
+										<h3 className="text-display text-2xl text-white font-extrabold">
 											{exp.role}
 										</h3>
-										<p className="text-sm mt-1 font-extrabold text-white/90">
+										<p className="text-lg mt-1 font-extrabold text-white/90">
 											{exp.company}
 										</p>
 									</div>
-									<span className="text-xs tracking-wider uppercase text-[--color-text-muted] md:mt-1.5 shrink-0">
+									<span className="text-lg tracking-wider uppercase text-[--color-text-muted] md:mt-1.5 shrink-0">
 										{exp.period}
 									</span>
 								</div>
 
-								<p className="text-[--color-text-secondary] text-left  text-sm mb-4 leading-relaxed">
+								<p className="text-[--color-text-secondary] text-left  text-lg mb-4 leading-relaxed">
 									{"Summary: " + exp.description}
 								</p>
-								<div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.35em] text-[--color-accent]" />
+								<div className="inline-flex items-center gap-3 text-lg uppercase tracking-[0.35em] text-[--color-accent]" />
 								<div />
 								<ul className="space-y-2 text-left w-full">
 									{exp.highlights.map((h) => (
 										<li
 											key={h}
-											className="flex items-start gap-3 text-sm text-[--color-text-muted]"
+											className="flex items-start gap-3 text-lg text-[--color-text-muted]"
 										>
 											<span className="shrink-0">•</span>
 											<span>{h}</span>
 										</li>
 									))}
 								</ul>
-								<div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.35em] text-[--color-accent]" />
+								<div className="inline-flex items-center gap-3 text-lg uppercase tracking-[0.35em] text-[--color-accent]" />
 								<div />
 							</motion.div>
 						))}

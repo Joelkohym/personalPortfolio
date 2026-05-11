@@ -112,7 +112,7 @@ export default function Projects() {
 
 				{/* Other projects — centered list */}
 				<div className="w-full max-w-4xl border-t border-[--color-border]/20 pt-20">
-					<h3 className="text-sm tracking-[0.3em] uppercase text-[--color-accent] mb-12 font-medium">
+					<h3 className="text-sm tracking-[0.3em] uppercase text-[--color-accent] mb-12 font-medium !pt-10">
 						Archive & Other Experiments
 					</h3>
 					<div className="flex flex-col w-full">
@@ -134,7 +134,7 @@ export default function Projects() {
 									</p>
 								</div>
 
-								<div className="flex items-center gap-6 ml-4 shrink-0">
+								<div className="flex items-center gap-6 ml-4 shrink-0 !py-10">
 									<div className="hidden lg:flex gap-3">
 										{project.tags.slice(0, 2).map((tag) => (
 											<span
